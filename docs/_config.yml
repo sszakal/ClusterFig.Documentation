@@ -3,9 +3,9 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Project Name
-tagline:          Project Tag Line
-description:      "Project Description"
+title:            BlackDoc
+tagline:          Living Documentation
+description:      "Living Documentation"
 url:              https://github.com/karloespiritu/blackdoc
 baseurl:          
                   # the optional subpath of your site, e.g. "/my-jekyll-site/"

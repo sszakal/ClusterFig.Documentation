@@ -14,7 +14,7 @@ steps:
   displayName:  Build an image and push to docker hub
   inputs:
     containerRegistry: $(dockerHub)
-    repository:  clusterfig/documentation:$(Build.BuildId)
+    repository:  clusterfig/documentation
     command: buildAndPush
     Dockerfile: Dockerfile
 

@@ -11,18 +11,13 @@ pool:
 
 steps:
 - task: Docker@2
-  displayName: Build an image
+  displayName:  Build an image and push to docker hub
   inputs:
+    containerRegistry: $(dockerHub)
     repository: $(imageName)
-    command: build
+    command: buildAndPush
     Dockerfile: Dockerfile
+    tags: clusterfig/documentation
 
-- task: Docker@2
-  displayName: Push image
-  inputs:
-    containerRegistry: |
-      $(dockerHub)
-    repository: $(imageName)
-    command: push
-    tags: |
-      clusterfig/documentation
+
+    
